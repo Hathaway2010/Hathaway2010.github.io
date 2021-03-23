@@ -16,21 +16,6 @@ section {
   height: 100vh;
   z-index: -1;
 }
-/* #image-container {
-  position: absolute;
-  margin: 0;
-  width: 1200px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-#image {
-  object-position: top left;
-  max-width: 100%;
-  object-fit: none;
-  z-index: 0;
-} */
 #decorative {
   font-size: 60px;
   position: relative;
@@ -112,14 +97,14 @@ a:hover {
   padding: 20px;
   margin: auto;
 }
-
+@media only screen and (max-width: 1024px) {
+  #welcome-section {
+    background-size: cover;
+  }
+}
 @media only screen and (max-width: 850px) {
   #projects-div {
     grid-template-columns: 50% 50%
-  }
-  #image-container {
-    width: 100vw;
-    height: 100%;
   }
   #projects-and-header {
     width: 97%;
@@ -135,5 +120,8 @@ a:hover {
 @media only screen and (max-width: 500px) {
   #projects-div {
     grid-template-columns: 100%
+  }
+  #decorative {
+    font-size: 40px;
   }
 }
