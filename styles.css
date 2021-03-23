@@ -4,24 +4,33 @@ body {
   width: 100vw;
   /* overflow-x: hidden; */
 }
+hr {
+  border: 10px solid #36364b;
+}
+section {
+  margin: auto;
+}
 #welcome-section {
-  margin-top: 0;
+  background-image: url("images/star-abstract.png");
+  background-repeat: no-repeat;
   height: 100vh;
   z-index: -1;
 }
-#image-container {
+/* #image-container {
   position: absolute;
-  width: 1100px;
+  margin: 0;
+  width: 1200px;
+  height: 100%;
   top: 0;
+  left: 0;
   z-index: 0;
 }
 #image {
-  position: absolute;
-  width: 100%;
+  object-position: top left;
+  max-width: 100%;
   object-fit: none;
-  top: 0;
   z-index: 0;
-}
+} */
 #decorative {
   font-size: 60px;
   position: relative;
@@ -35,7 +44,7 @@ body {
 #profile-links {
   position: absolute;
   top: 320px;
-  right: 0;
+  right: 10px;
   display: flex;
   flex-direction: column;
   min-width: 350px;
@@ -109,21 +118,22 @@ a:hover {
     grid-template-columns: 50% 50%
   }
   #image-container {
-    width: 850px;
+    width: 100vw;
+    height: 100%;
   }
-  #projects {
-    width: 100%;
+  #projects-and-header {
+    width: 97%;
+  }
+  #about-section {
+    width: 97%;
   }
   #about {
-    width: 100%;
+    padding: 7px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   #projects-div {
     grid-template-columns: 100%
-  }
-  #image-container {
-    width: 500px;
   }
 }
