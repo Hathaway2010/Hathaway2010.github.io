@@ -2,16 +2,7 @@ body {
   font-family: "Raleway", sans-serif;
   width: 100%;
   background-color: #ffff99;
-}
-#nav-links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 30%;
-  right: 20px;
-  box-shadow: 1px 1px 3px black;
-  background-color: #ffff99;
-  z-index: 2;
+  overflow-x: hidden;
 }
 #welcome-section {
   margin-top: -100px;
@@ -33,20 +24,30 @@ body {
   background-color: transparent;
   left: 5%;
   z-index: 1;
-
 }
-.links {
-  display: flex;
-  background-color: #ffff99;
-  flex-direction: column;
-  box-shadow: 1px 1px 3px black;
-  padding: 15px;
-  min-width: 15%;
+hr {
+  border: 10px solid #36364b;
 }
 #profile-links {
   position: absolute;
-  bottom: 70px;
-  right: 20px;
+  top: 320px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  z-index: 2;
+}
+
+#profile-background {
+  position: absolute;
+  top: 280px;
+  right: 0;
+  background-color: #ffff99;
+  border-radius: 50%;
+  min-width: 350px;
+  padding-top: 350px;
+  z-index: 1;
+
 }
 h2 {
   font-family: "Raleway", sans-serif;
@@ -55,6 +56,8 @@ h2 {
 h3 {
   font-family: "Raleway", sans-serif;
   color: #e60000;
+  position: relative;
+  left: 25%;
 }
 a {
   font-family: "Raleway", sans-serif;
@@ -63,7 +66,7 @@ a {
   color: black;
   text-decoration: none;
   padding: 5px;
-  padding-left: 25px;
+  text-align: center;
 }
 a:hover {
   color: #e60000;
@@ -75,7 +78,7 @@ a:hover {
   background-color: white;
 }
 #projects {
-  width: 60%;
+  width: 75%;
   margin: auto;
 }
 #projects-div {
@@ -88,14 +91,20 @@ a:hover {
   margin: auto;
 }
 
-@media screen and (max-width: 850px) {
-  #projects {
+@media only screen and (max-width: 850px) {
+  #projects-div {
     grid-template-columns: 50% 50%
+  }
+  #projects {
+    width: 100%;
+  }
+  #about {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 414px) {
-  #projects {
+@media only screen and (max-width: 414px) {
+  #projects-div {
     grid-template-columns: 100%
   }
 }
