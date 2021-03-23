@@ -4,7 +4,7 @@
     <title>Nora Moseman: Web Developer</title>
     <link href="styles.css" type="text/css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,7 +12,15 @@
       <section id="welcome-section">
         <h1 id=decorative>Nora Moseman<br>
         Web Developer</h1>
-        <img src="./images/star-abstract.png" id="image" alt="starlike digital abstract">
+        <div id="image-container">
+          <img id="image" srcset="images/small-star-abstract.png 415w,
+                                  images/med-star-abstract.png 852w,
+                                  images/star-abstract.png 1197w"
+                          sizes="(max-width 414px) 414px,
+                                 (max-width 850px) 850px,
+                                 1197px"
+                          alt="starlike digital abstract">
+        </div>
         <div id="profile-background"></div>
         <div id="profile-links">
           <h3>Welcome</h3>
@@ -24,20 +32,23 @@
           <a href="https://www.freecodecamp.org/hathaway2010" target="_blank">freeCodeCamp</a>
         </div>
       </section>
-      <section id="about">
-        <h2>About</h2>
-        <p>For years after finishing my bachelor's in English lit at Harvard, I lived my dream: I worked at an independent bookstore while writing, translating Russian poetry, and painting on the side. But I wondered what I was missing in the quantitative, technical world. COVID gave me the opportunity I needed: I taught myself to code.
-        <p>I've been learning as fast as I can since November 2020. I can create algorithms and data visualizations in Python and JavaScript, as well as web apps using React, Flask, Django, HTML, CSS, and JavaScript. I've earned four certificates from freeCodeCamp, which entails building a number of web apps from scratch — freeCodeCamp estimates these certificates to require 1200 hours of work. I have also completed seven certificates from Coursera, including a four-course Python sequence from Rice University.</p>
-        <p>Most recently, I completed Harvard's CS50x, the MOOC version of their introduction to computer science, and CS50's Web Programming with Python and JavaScript. As a final project, I built a poetry scansion app that generates automated scansions (patterns of stressed and unstressed syllables) of public-domain poems, lets users train against human scansions, and allows qualified users to train the app.</p>
-        <p>The pandemic created space in my life to do what I love — learn and solve complex problems while interacting with creative and engaging people.</p>
+      <section id="about-section">
+        <div id="about">
+          <h2>About</h2>
+          <p>For years after finishing my bachelor's in English lit at Harvard, I lived my dream: I worked at an independent bookstore while writing, translating Russian poetry, and painting on the side. But I wondered what I was missing in the quantitative, technical world. COVID gave me the opportunity I needed: I taught myself to code.
+          <p>I've been learning as fast as I can since November 2020. I can create algorithms and data visualizations in Python and JavaScript, as well as web apps using React, Flask, Django, HTML, CSS, and JavaScript. I've earned four certificates from freeCodeCamp, which entails building a number of web apps from scratch — freeCodeCamp estimates these certificates to require 1200 hours of work. I have also completed seven certificates from Coursera, including a four-course Python sequence from Rice University.</p>
+          <p>Most recently, I completed Harvard's CS50x, the MOOC version of their introduction to computer science, and CS50's Web Programming with Python and JavaScript. As a final project, I built a poetry scansion app that generates automated scansions (patterns of stressed and unstressed syllables) of public-domain poems, lets users train against human scansions, and allows qualified users to train the app.</p>
+          <p>The pandemic created space in my life to do what I love — learn and solve complex problems while interacting with creative and engaging people.</p>
+      </div>
       </section>
-      <hr>
       <section id="projects">
-        <h2>Projects</h2>
-        <div id="projects-div">
-          <a class="project-tile" href="https://poetry-scansion.Hathaway2010.repl.co">Poetry Scansion<br><img class="project" width="220" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Quill_%28PSF%29_vector.svg" alt="Engraving of George MacDonald"</a>
-          <a class="project-tile" href="https://codepen.io/hathaway2010/pen/dypYQWZ">JavaScript Calculator<br> <img class="project" width="220" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Grant_mechanical_calculating_machine_1877.jpg"></a>
-          <a class="project-tile" href="https://codepen.io/hathaway2010/full/rNMeNVX">25 + 5 Clock<br> <img class="project" width="220" src="https://upload.wikimedia.org/wikipedia/commons/8/85/E4CC_appendix2.jpg"></a>
+        <div id="projects-and-header">
+          <h2>Projects</h2>
+          <div id="projects-div">
+            <a class="project-tile" href="https://poetry-scansion.Hathaway2010.repl.co">Poetry Scansion<br><img class="project" width="220" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Quill_%28PSF%29_vector.svg" alt="Engraving of George MacDonald"</a>
+            <a class="project-tile" href="https://codepen.io/hathaway2010/pen/dypYQWZ">JavaScript Calculator<br> <img class="project" width="220" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Grant_mechanical_calculating_machine_1877.jpg"></a>
+            <a class="project-tile" href="https://codepen.io/hathaway2010/full/rNMeNVX">25 + 5 Clock<br> <img class="project" width="220" src="https://upload.wikimedia.org/wikipedia/commons/8/85/E4CC_appendix2.jpg"></a>
+          </div>
         </div>
       </section>
     </main>
